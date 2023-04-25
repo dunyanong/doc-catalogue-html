@@ -1,0 +1,53 @@
+body {
+    background-color: #EAF2F9;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+.card{
+    background-color: #76cff5;
+    border-color: red;
+}
+
+.btn{
+    background-color: #135ca1;
+}
+
+.hero-banner {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1595520519880-a86c48ea536c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80");
+    background-size: cover;
+    background-position: center;    
+    padding: 0 20px;
+}
+
+.hero-banner h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #ffff;
+}
+
+.hero-banner p {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #ffff;
+}
+
+.hero-banner button {
+    background-color: #3491C7;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero-banner-text {
+    flex: 1;
+    margin-right: 100px;
+}
