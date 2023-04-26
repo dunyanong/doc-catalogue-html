@@ -1,28 +1,84 @@
 body {
     background-color: #EAF2F9;
+    padding: 0;
+    margin: 0;
 }
 
-h1{
-    margin-bottom: 20px;
+.hero-title {
+    font-size: 0.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
 }
 
-.card{
-    background-color: #76cff5;
-    border-color: red;
+.logo-link {
+    font-size: 1.2rem;
 }
 
-.btn{
-    background-color: #135ca1;
+/* Navbar section */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem 2.5rem;
+}
+  
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #000;
 }
 
+.navbar-group-item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}  
+
+.nav-link {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #000;
+    margin-left: 2rem;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    transition: all 0.3s ease-in-out;
+    color: #555;
+}  
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 1rem;
+    }
+
+    .navbar-group-item {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .nav-link {
+        margin: 0;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+}  
+
+/* Banner styling */
 .hero-banner {
     display: flex;
     align-items: center;
-    height: 100vh;
-    background-image: url("https://images.unsplash.com/photo-1595520519880-a86c48ea536c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80");
+    height: 100vh;    
     background-size: cover;
-    background-position: center;    
-    padding: 0 20px;
+    background-position: center;
+    background-image: url("https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80");
 }
 
 .hero-banner h1 {
@@ -32,22 +88,30 @@ h1{
 }
 
 .hero-banner p {
-    font-size: 24px;
+    font-size: 1rem;
     margin-bottom: 30px;
     color: #ffff;
 }
 
-.hero-banner button {
+.learn-more-btn {
     background-color: #3491C7;
     color: #fff;
+    font-weight: 600;
     font-size: 20px;
-    padding: 10px 20px;
+    padding: 0.7rem 3rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.hero-banner-text {
-    flex: 1;
-    margin-right: 100px;
+.hero-content {
+    max-width: 48%;
+    margin-right: auto;
+    margin-left: 5rem;
+}  
+.hero-description {
+  width: 75%;
 }
+
+
+  
