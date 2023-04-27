@@ -131,6 +131,7 @@ body {
 @media(max-width: 576px) {
     .primary-hero-content {
         margin-left: 3rem;
+        margin-right: 3rem;
         width: 90%;
     }
     .primary-hero-title {
@@ -156,7 +157,7 @@ body {
     justify-items: center;
 }
 
-.banner-image {
+.nurse-image {
     max-width: 90%;
     max-height: 90%;
 }
@@ -177,12 +178,33 @@ body {
 /* Secondary Banner styling: Media query for mobile screens */
 @media(max-width: 576px) {
     .secondary-hero-banner {
-        display: grid;
         grid-template-columns: 100%;
-        height: 80vh;
-        background-size: cover;
-        background-position: center;
-        background-image: url("./Images/secondary-banner-background.png");
+        height: 50vh;
+        align-items: flex-end;
+        padding: 2rem;
+        box-sizing: border-box;
+    }
+  
+    .nurse-image {
+        max-width: 80%;
+        max-height: 100%;
+        margin: 2rem 0;
+        height: auto;
+    }
+  
+    .secondary-hero-title {
+        font-size: 1.5rem;
+        margin-bottom: 1rem; 
+    }
+  
+    .secondary-hero-description {
+        max-width: 100%; 
+        margin-bottom: 1rem; 
+    }
+    
+    /* New styles for mobile screens */
+    .secondary-hero-banner {
+        grid-template-columns: 100%;
     }
 }
 
