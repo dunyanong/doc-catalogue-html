@@ -1,7 +1,8 @@
 body {
-    background-color: #FFFF;
+    background-color: #ffff;
     padding: 0;
     margin: 0;
+    font-family: sans-serif;
 }
 /* Reusable selector classes */
 
@@ -57,29 +58,34 @@ body {
     color: #000;
 }  
 
-/* Media query for mobile devices */
-@media screen and (max-width: 768px) {
+/* Navbar styling: Media query for mobile screens */
+@media(max-width: 576px) {
     .navbar-container {
         flex-direction: column;
-        align-items: stretch;
         padding: 1rem;
     }
-
+    .doc-logo {
+        width: 50%;
+        margin: 0 auto;
+    }
     .navbar-group-item {
         flex-direction: column;
         margin-top: 1rem;
     }
-
     .nav-link {
-        margin: 0;
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
         font-size: 1.2rem;
-        padding: 1rem;
+        margin-left: 0;
+        padding: 1rem 0;
+        display: block;
+        text-align: center;
+        border-bottom: 1px solid #ccc;
+    }
+    .nav-link:last-child {
+        border-bottom: none;
     }
 }
 
-/* Primary Banner styling */
+/* Primary Banner styling: Default for laptop/computer screens */
 .primary-hero-banner {
     display: flex;
     align-items: center;
@@ -87,11 +93,12 @@ body {
     background-size: cover;
     background-position: center;
     background-image: url("./Images/primary-banner-background.png");
+
 }
 
 .primary-hero-content {
-    max-width: 48%;
-    margin-right: auto;
+    width: 50%;
+    margin-right: 0;
     margin-left: 5rem;
 }
 
@@ -102,7 +109,7 @@ body {
 }
 
 .primary-hero-description {
-    width: 75%;
+    width: 70%;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     font-size: 1rem;
@@ -112,12 +119,30 @@ body {
 .learn-more-btn {
     background-color: #3491C7;
     color: #fff;
-    font-weight: 600;
-    font-size: 20px;
-    padding: 0.7rem 3rem;
+    font-weight: 550;
+    font-size: 1.2rem;
+    padding: 0.7rem 2.5rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     cursor: pointer;
+}
+
+/* Primary Banner styling: Media query for mobile screens */
+@media(max-width: 576px) {
+    .primary-hero-content {
+        margin-left: 3rem;
+        width: 90%;
+    }
+    .primary-hero-title {
+        font-size: 2rem;
+    }
+    .primary-hero-description {
+        width: 70%;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        font-size: 0.9rem;
+        color: #ffff;
+    }    
 }
 
 /* Secondary Banner styling */
@@ -128,6 +153,7 @@ body {
     background-size: cover;
     background-position: center;
     background-image: url("./Images/secondary-banner-background.png");
+    justify-items: center;
 }
 
 .banner-image {
@@ -146,6 +172,18 @@ body {
 
 .colored-title {
     color: #5B8AC1;
+}
+
+/* Secondary Banner styling: Media query for mobile screens */
+@media(max-width: 576px) {
+    .secondary-hero-banner {
+        display: grid;
+        grid-template-columns: 100%;
+        height: 80vh;
+        background-size: cover;
+        background-position: center;
+        background-image: url("./Images/secondary-banner-background.png");
+    }
 }
 
 /* Footer */
