@@ -1,5 +1,5 @@
 body {
-    background-color: #ffff;
+    background-color: #fff;
     padding: 0;
     margin: 0;
     font-family: sans-serif;
@@ -22,6 +22,10 @@ body {
 .horizontal-center {
     display: flex;
     justify-content: center;
+}
+
+.text-center {
+    text-align: center;    
 }
 
 .doc-logo {
@@ -150,7 +154,6 @@ body {
 .secondary-hero-banner {
     display: grid;
     grid-template-columns: 55% 45%;
-    height: 80vh;
     background-size: cover;
     background-position: center;
     background-image: url("./Images/secondary-banner-background.png");
@@ -163,7 +166,7 @@ body {
 }
 
 .secondary-hero-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 800;
 }
 
@@ -175,11 +178,21 @@ body {
     color: #5B8AC1;
 }
 
+/* Secondary Banner styling: Media query for tablet screens */
+@media (max-width: 992px) {
+    .secondary-hero-banner {
+        grid-template-columns: 100%;
+        align-items: flex-end;
+        padding: 2rem;
+        box-sizing: border-box;
+    }
+}
+
+
 /* Secondary Banner styling: Media query for mobile screens */
 @media(max-width: 576px) {
     .secondary-hero-banner {
         grid-template-columns: 100%;
-        height: 50vh;
         align-items: flex-end;
         padding: 2rem;
         box-sizing: border-box;
@@ -203,13 +216,21 @@ body {
     }
 }
 
+
 /* Benefit Page styling */
+.benefit-section{
+    background-color: #D9E8F0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.benefit-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .benefit-card {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    padding: 20px;
+    max-width: 60%;
 }
 
 .benefit-title {
@@ -222,31 +243,34 @@ body {
     height: auto;
 }
 
-.benefit-card h3 {
-    margin-top: 0;
+.center-benefit-card {
+    text-align: center;
+    display: flex;
+    justify-content: center;    
 }
 
-.benefit-card p {
-    margin-bottom: 0;
+.benefit-card-title {
+    font-weight: 800;
 }
 
-/* Grid layout for benefit cards */
-.benefit-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+.benefit-card-bold {
+    font-weight: bold;
 }
 
-@media screen and (max-width: 576px) {
-    .benefit-grid {
-        grid-template-columns: 1fr;
+.benefit-blue {
+    color: #2891C7;
+}
+
+/* Benefit page styling: Media query for mobile screens */
+@media (max-width: 576px) {
+    .benefit-container {
+      flex-direction: column;
+      align-items: center;
     }
-}
-
-
-
+}  
 
 /* Footer */
 .bottom-footer {
+    background-color: #fff;
     padding: 2rem;
 }
