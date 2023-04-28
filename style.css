@@ -1,66 +1,73 @@
 body {
     background-color: #fff;
-    padding: 0;
-    margin: 0;
     font-family: sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
+.service-description-bold {
+    font-weight: bold;
+}
+
 /* Reusable selector classes */
 
-/* Inserting items in the end of y-axis */
+/* Align items to the end of the container in y-axis */
 .vertical-end {
-    display: flex;
     align-items: end;
-}
-
-/* Centering items in y-axis */
-.vertical-center {
     display: flex;
-    align-items: center;
 }
 
-/* Centering items in x-axis */
+/* Center items vertically within the container */
+.vertical-center {
+    align-items: center;
+    display: flex;
+}
+
+/* Center items horizontally within the container */
 .horizontal-center {
     display: flex;
     justify-content: center;
 }
 
+/* Center text within the container */
 .text-center {
     text-align: center;    
 }
 
+/* Logo for document */
 .doc-logo {
-    width: 6rem;
     height: 4rem;
-}  
+    width: 6rem;
+}
 
 /* Navbar section */
 .navbar-container {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
     padding: 1rem 2.5rem;
 }
 
 .navbar-group-item {
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
+    justify-content: space-between;
 }  
 
 .nav-link {
-    font-size: 1rem;
-    text-decoration: none;
     color: #000;
+    font-size: 1rem;
     margin-left: 2rem;
     padding: 0.5rem;
+    text-decoration: none;
 }
 
 .nav-link:hover {
-    text-decoration: underline;
     color: #000;
-}  
+    text-decoration: underline;
+}
 
 /* Navbar styling: Media query for mobile screens */
 @media(max-width: 576px) {
@@ -167,7 +174,7 @@ body {
 
 .secondary-hero-title {
     font-size: 2.5rem;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .secondary-hero-description {
@@ -187,7 +194,6 @@ body {
         box-sizing: border-box;
     }
 }
-
 
 /* Secondary Banner styling: Media query for mobile screens */
 @media(max-width: 576px) {
@@ -270,19 +276,18 @@ body {
 }
 
 /* Service page styling */
-.container {
+.service-section {
     margin: 0 auto;
     padding: 2rem;
     background-color: #D8D8D8;
 }
 
-.section-title {
+.service-title {
     font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 2rem;
 }
 
-.cards {
+.service-card-group {
     display: grid;
     margin-left: 5rem;
     margin-right: 5rem;
@@ -290,46 +295,46 @@ body {
     grid-gap: 2rem;    
 }
 
-.card {
+.service-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 1rem;
     background-color: #FFFFFF;
     padding: 1rem;
     text-align: start;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
 }
-  
 
-.card img {
+.service-card-image {
     width: 100%;
     height: auto;
-    border-radius: 5px;
 }
 
-.card-title {
-    font-size: 1rem;
+.service-card-card-title {
+    font-size: 1.2rem;
     margin-left: 1rem;
     font-weight: bold;
 }
 
-.card-description {
-    font-size: 1rem;
+.service-card-description {
+    font-size: 0.9rem;
     margin-left: 1rem;
     margin-top: 0rem;
     margin-bottom: 1rem;
 }
 
-.card-learn-more {
+.service-card-learn-more {
     display: inline-block;
     color: #000000;
+    font-weight: 700;
     text-decoration: none;
     margin-left: 1rem;
     transition: all 0.3s ease;
 }
 
 @media only screen and (max-width: 992px) {
-    .cards {
+    .service-card-group {
         grid-template-columns: repeat(2, 1fr);
         margin-left: 2rem;
         margin-right: 2rem;        
@@ -337,7 +342,7 @@ body {
 }
 
 @media only screen and (max-width: 576px) {
-    .cards {
+    .service-card-group {
         grid-template-columns: repeat(1, 1fr);
     }
 }
