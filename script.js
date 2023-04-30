@@ -5,14 +5,10 @@ function scrollToSection() {
 }
 
 // toggle navbar collapse on mobile and tablet screens
-var navbarToggler = document.querySelector('.navbar-toggler');
-var navbarCollapse = document.querySelector('.navbar-collapse');
+let navbarToggler = document.querySelector('.navbar-toggler');
+let navbarCollapse = document.querySelector('.navbar-collapse');
 
-navbarToggler.addEventListener('click', function() {
-  navbarCollapse.classList.toggle('show');
-});
-
-// Close dropdown menus when clicking outside
+// Close dropdown menus when clicked again
 document.addEventListener('click', function(e) {
   if (!navbarCollapse.contains(e.target)) {
     navbarCollapse.classList.remove('show');
