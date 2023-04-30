@@ -205,17 +205,18 @@ body {
 /* Benefit Page styling */
 .benefit-section {
     background-color: #D9E8F0;
-    padding-bottom: 2rem;
-    padding-top: 2rem;
+    padding: 1rem 0;
 }
 
 .benefit-container {
     display: flex;
     justify-content: space-between;
+    padding: 3rem 0rem;
 }
 
 .benefit-title {
     font-size: 2rem;
+    padding-top: 3rem;
     font-weight: 900;
 }
 
@@ -265,13 +266,12 @@ body {
 /* Service page styling */
 .service-section {
     background-color: #D8D8D8;
-    margin: 0 auto;
-    padding: 2rem;
+    padding: 0rem 2rem;
 }
 
 .service-title {
     font-size: 2rem;
-    margin: 1rem 0;
+    padding-top: 5rem;
     font-weight: bold;
 }
 
@@ -279,8 +279,7 @@ body {
     display: grid;
     grid-gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
-    margin-left: 5rem;
-    margin-right: 5rem;
+    padding: 5rem;
 }
 
 .service-card {
