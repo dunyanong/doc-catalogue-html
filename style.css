@@ -34,6 +34,28 @@ body {
     text-align: center;    
 }
 
+/* Provide paddings on the side */
+.padding-section {
+    padding-left: 5rem;    
+    padding-right: 5rem;
+}
+
+/* Provide paddings on the side: Media query for tablet screens */
+@media (max-width: 992px) {
+    .padding-section {
+        padding-left: 3rem;    
+        padding-right: 3rem;
+    }  
+}
+
+/* Provide paddings on the side: Media query for mobile screens */
+@media(max-width: 576px) {
+    .padding-section {
+        padding-left: 1rem;    
+        padding-right: 1rem;
+    }  
+}
+
 /* Navbar section */
 .doc-logo {
     height: 4rem;
@@ -42,7 +64,7 @@ body {
 
 .section-title {
     font-size: 2rem;
-    padding-top: 3rem;
+    padding-top: 5rem;
     font-weight: 900;
 }
 
@@ -50,7 +72,8 @@ body {
 @media(max-width: 576px) {
     .doc-logo {        
         margin: 0 auto;
-        width: 50%;
+        height: 2rem;
+        width: 3rem;        
     }
 }
 
@@ -91,8 +114,6 @@ body {
 }
 
 .primary-hero-content {
-    margin-left: 5rem;    
-    margin-right: 0;
     width: 50%;
 }
 
@@ -124,8 +145,6 @@ body {
 /* Primary Banner styling: Media query for mobile screens */
 @media(max-width: 576px) {
     .primary-hero-content {
-        margin-left: 3rem;
-        margin-right: 3rem;
         width: 90%;
     }
 
@@ -211,7 +230,6 @@ body {
 /* Benefit Page styling */
 .benefit-section {
     background-color: #D9E8F0;
-    padding: 1rem 0;
 }
 
 .benefit-container {
@@ -266,14 +284,13 @@ body {
 /* Service page styling */
 .service-section {
     background-color: #D8D8D8;
-    padding: 0rem 2rem;
 }
 
 .service-card-group {
     display: grid;
-    grid-gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
-    padding: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
 }
 
 .service-card {
@@ -281,7 +298,7 @@ body {
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    margin: 1rem;
     justify-content: space-between;
     padding: 1rem;
     text-align: start;
@@ -323,16 +340,18 @@ body {
 }
 /* Service page styling: Media query for mobile screens */
 @media(max-width: 576px) {
+    .service-section {
+        background-color: #D8D8D8;
+    }    
     .service-card-group {
         grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1rem;
         margin-left: 0rem;
         margin-right: 0rem;        
     }
     .service-card {
         gap: 0rem;
-    }    
-    
-
+    }
 }
 
 
@@ -358,16 +377,53 @@ h2 {
 
 .partner-img {
     width: 4rem;
+    height: 7rem;
 }
 
 .partners-row {
-    display: flex;
+
+}
+
+.first-partners-row {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 4rem;
+}
+
+.second-partners-row {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4rem;
+}
+
+.third-partners-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 4rem;
     justify-content: center;
-    gap: 8rem;
 }
   
 @media(max-width: 576px) {
-
+    .first-partners-row {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0rem;
+    }
+    
+    .second-partners-row {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0rem;
+    }
+    
+    .third-partners-row {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0rem;
+    }    
+    .partner-img {
+        width: 100%;
+    }
 }
   
 
