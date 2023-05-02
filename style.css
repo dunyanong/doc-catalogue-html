@@ -5,10 +5,6 @@ body {
     padding: 0;
 }
 
-.service-description-bold {
-    font-weight: bold;
-}
-
 /* Reusable selector classes */
 
 /* Align items to the end of the container in y-axis */
@@ -34,32 +30,28 @@ body {
     text-align: center;    
 }
 
+/* Bolding words from the description section */
+.description-bold {
+    font-weight: bold;
+}
+
 /* Provide paddings on the side */
 .padding-section {
-    padding-left: 5rem;    
-    padding-right: 5rem;
+    padding: 0 5rem;
 }
 
 /* Provide paddings on the side: Media query for tablet screens */
 @media (max-width: 992px) {
     .padding-section {
-        padding-left: 3rem;    
-        padding-right: 3rem;
+        padding: 0 3rem;
     }  
 }
 
 /* Provide paddings on the side: Media query for mobile screens */
 @media(max-width: 576px) {
     .padding-section {
-        padding-left: 1rem;    
-        padding-right: 1rem;
+        padding: 0 2rem;
     }  
-}
-
-/* Navbar section */
-.doc-logo {
-    height: 4rem;
-    width: 6rem;
 }
 
 .section-title {
@@ -68,13 +60,41 @@ body {
     font-weight: 900;
 }
 
+/* Navbar styling */
+.doc-logo {
+    height: auto;
+    width: 6rem;
+}
+
+.navbar-padding-section {
+    padding: 0rem 5rem;
+}
+
+/* Navbar styling: Media query for tablet screens */
+@media(max-width: 992px) {
+    .doc-logo {        
+        margin: 0 auto;
+        height: auto;
+        width: 3rem;        
+    }
+    .navbar-padding-section {
+        padding-left: 2rem;    
+        padding-right: 0rem;
+    }    
+    
+}
+
 /* Navbar styling: Media query for mobile screens */
 @media(max-width: 576px) {
     .doc-logo {        
         margin: 0 auto;
-        height: 2rem;
+        height: auto;
         width: 3rem;        
     }
+    .navbar-padding-section {
+        padding-left: 1rem;    
+        padding-right: 0rem;
+    }    
 }
 
 /* Navbar underline animation at computer/laptop screen*/
@@ -85,31 +105,31 @@ body {
   
 @media (min-width: 992px) {
     .navbar-nav .nav-link::before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        bottom: 0;
-        left: 0;
         background-color: black;
-        visibility: hidden;
+        bottom: 0;
+        content: "";
+        height: 2px;
+        left: 0;
+        position: absolute;
         transform: scaleX(0);
         transition: all 0.3s ease-in-out 0s;
+        visibility: hidden;
+        width: 100%;        
     }
 
     .navbar-nav .nav-link:hover::before {
+        transform: scaleX(1);        
         visibility: visible;
-        transform: scaleX(1);
     }
 }
 
 /* Primary Banner styling: Default for laptop/computer screens */
 .primary-hero-banner {
+    align-items: center;    
     background-image: url("./Images/primary-banner-background.png");    
     background-position: center;
     background-size: cover;    
     display: flex;
-    align-items: center;
     height: 100vh;    
 }
 
@@ -140,6 +160,13 @@ body {
     font-size: 1.2rem;
     font-weight: 550;
     padding: 0.7rem 2.5rem;
+}
+
+/* Primary Banner styling: Media query for tablet screens */
+@media(max-width: 992px) {
+    .primary-hero-content {
+        width: 80%;
+    }
 }
 
 /* Primary Banner styling: Media query for mobile screens */
@@ -181,7 +208,7 @@ body {
     font-weight: 700;
 }
 
-.colored-title {
+.secondary-colored-title {
     color: #5B8AC1;
 }
 
@@ -242,17 +269,14 @@ body {
     max-width: 60%;
 }
 
-.benefit-card-bold {
-    font-weight: bold;
-}
-
-.benefit-card-img {
+.benefit-card > img {
     height: auto;
     max-width: 100%;
 }
 
 .benefit-card-title {
     font-weight: 800;
+    font-size: 1.3rem;
 }
 
 .center-benefit-card {
@@ -267,7 +291,7 @@ body {
 
 /* Benefit page styling: Media query for tablet screens */
 @media (max-width: 992px) {
-    .benefit-card-img {
+    .benefit-card > img {
         height: auto;
         max-width: 80%;
     }
@@ -317,7 +341,7 @@ body {
 }
 
 .service-card-description {
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-bottom: 1rem;
     margin-left: 1rem;
     margin-top: 0rem;
@@ -354,34 +378,15 @@ body {
     }
 }
 
-
-
-
-
-
-
-
-
 /* Partners page styling */
-h2 {
-    text-align: center;
-}
-
-.partners-section {
-
+.partners-row > img {
+    width: 4rem;
+    height: auto;
 }
 
 .partners-group {
-    
-}
-
-.partner-img {
-    width: 4rem;
-    height: 7rem;
-}
-
-.partners-row {
-
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 .first-partners-row {
@@ -402,7 +407,16 @@ h2 {
     gap: 4rem;
     justify-content: center;
 }
-  
+
+/* Partners page styling: Media query for tablet screens */
+@media(max-width: 992px) {
+    .partners-row > img {
+        width: 80%;
+        height: auto;
+    }   
+}
+
+/* Partners page styling: Media query for mobile screens */
 @media(max-width: 576px) {
     .first-partners-row {
         display: grid;
@@ -421,17 +435,15 @@ h2 {
         grid-template-columns: repeat(1, 1fr);
         gap: 0rem;
     }    
-    .partner-img {
+    .partners-row > img {
         width: 100%;
+        height: auto;
     }
+    .partners-group {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }       
 }
-  
-
-
-
-
-
-
 
 /* Footer */
 .bottom-footer {
