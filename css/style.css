@@ -28,6 +28,11 @@ body {
     justify-content: center;
 }
 
+.horizontal-start {
+    display: flex;
+    justify-content: start;
+}
+
 /* Center text within the container */
 .text-center {
     text-align: center;    
@@ -193,7 +198,7 @@ body {
 
 /* Secondary Banner styling */
 .secondary-hero-banner {
-    background-image: url("./Images/secondary-banner-background.png");
+    background-image: url("../Assets/secondary-banner-background.png");
     background-position: center;
     background-size: cover;
     display: grid;
@@ -202,8 +207,7 @@ body {
 }
 
 .nurse-image {    
-    max-height: 90%;
-    max-width: 90%;
+    
 }
 
 .secondary-hero-title {
@@ -254,7 +258,6 @@ body {
         margin-bottom: 1rem;
         max-width: 100%;
     }
-    
 }
 
 /* Benefit Page styling */
@@ -383,7 +386,8 @@ body {
 
 /* Partners page styling */
 .partners-row > img {
-    width: 4rem;
+    width: 5rem;
+    padding: 2rem 0rem;
     height: auto;
 }
 
@@ -396,12 +400,14 @@ body {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 4rem;
+    align-items: center;
 }
 
 .second-partners-row {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 4rem;
+    align-items: center;
 }
 
 .third-partners-row {
@@ -409,6 +415,7 @@ body {
     grid-template-columns: repeat(5, 1fr);
     gap: 4rem;
     justify-content: center;
+    align-items: center;
 }
 
 /* Partners page styling: Media query for tablet screens */
@@ -437,9 +444,14 @@ body {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 0rem;
-    }    
+        align-items: none;
+    }
+    .partners-row {
+        display: flex;
+        justify-content: center;
+    } 
     .partners-row > img {
-        width: 100%;
+        width: 60%;
         height: auto;
     }
     .partners-group {
