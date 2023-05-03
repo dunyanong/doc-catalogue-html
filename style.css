@@ -126,7 +126,7 @@ body {
 /* Primary Banner styling: Default for laptop/computer screens */
 .primary-hero-banner {
     align-items: center;    
-    background-image: url("./Images/primary-banner-background.png");    
+    background-image: url("./Assets/Asset 36.png");    
     background-position: center;
     background-size: cover;    
     display: flex;
