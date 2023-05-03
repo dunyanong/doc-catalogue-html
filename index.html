@@ -8,11 +8,15 @@
     <meta name="keywords" content="Health, Tech, Telehealth">
     <meta name="author" content="DoctorOnCall">
     <meta name="robots" content="index, follow">
-    <link rel="stylesheet" href="./style.css">
+    
+    <link rel="stylesheet" href="./css/tiny-slider.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/health-centre-category.css">
+    <link rel="stylesheet" href="./css/stylesheet.css">
 
     <!-- Favicons-->
     <link rel="shortcut icon" href="https://www.doctoroncall.com.my/images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="https://www	.doctoroncall.com.my/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://www.doctoroncall.com.my/images/favicon.ico" type="image/x-icon">
 
     <!-- To load boostrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -21,29 +25,64 @@
   <body>
 
     <!-- Navbar section -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white navbar-padding-section vw-100">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="https://www.doctoroncall.com.my">
-          <img src="./Images/doctoroncall.png" class="doc-logo" alt="DoctorOnCall logo"/>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item px-lg-5">
-              <a class="nav-link text-dark" href="/">Home</a>
-            </li>
-            <li class="nav-item px-lg-5">
-              <a class="nav-link text-dark" href="https://www.doctoroncall.com.my/about-us">About Us</a>
-            </li>
-            <li class="nav-item px-lg-5">
-              <a class="nav-link text-dark" href="https://www.doctoroncall.com.my/contact-us">Contact Us</a>
-            </li>
-          </ul>
+    <header id="header" class="br-b-gray-1 bg-white pos-fix fullwidth sr t-05-ease">
+      <div id="nav-1" class="nav-1 bg-blue-1 pad slide-disable t-05-ease">
+        <div class="flex-box fullwidth fullheight wrap-1 centralized ai-c">
+          <h1 class="f-g0-s0 f-g1-s0-767">Your Online Doctor and Pharmacy</h1>
+          <div class="f-g1-s1 ta-c r-767">Download DoctorOnCall App for in-app discounts! <a class="button" href="#" target="_blank">Download Now!</a></div>
+          <a class="r-920 f-g0-s0" href="#" target="_blank">Corporate</a><a class="r-920 f-g0-s0" href="#" target="_blank">Become a Seller</a> <span class="toggle-container pos-rel f-g0-s0"> <span class="pos-abs bm">BM</span> <span class="pos-abs en">EN</span>
+          <button type="button" class="toggle toggle-btn pos-abs" id="toggle-lang"></button>
+          </span> </div>
+      </div>
+      <div class="pos-rel pad">
+        <div class="burger-wrapper pos-abs flex-box fullheight ai-c">
+          <div id="burger" class="burger toggle"> <span class="line"></span> <span class="line"></span> <span class="line"></span> </div>
+        </div>
+        <div class="nav-2 flex-box ai-c fullwidth wrap-1 slide-disable t-05-ease pt-1 pb-1">
+          <div id="logo" class="logo t-05-ease"><img class="fullwidth" src="./Assets/doc-logo.png" alt /></div>
+          <div class="search-box">
+            <input id="searchInput" autocomplete="off" class="search-bar fullwidth bg-gray-1" placeholder="Search medicine and health screening packages" onfocus="expandSearch()" onfocusout="shrinkSearch()">
+          </div>
+          <div class="main-nav r-767">
+            <div class="flex-box ai-c">
+              <div class="ta-c f-g1-s1">
+                <svg class="header-login" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+                  <g transform="translate(-1121 -191)">
+                    <rect class="class-a" width="25" height="25" transform="translate(1121 191)"></rect>
+                    <g transform="translate(1123 193)">
+                      <path class="class-b" d="M10.988,13.129A5.363,5.363,0,0,1,5.852,7.564,5.363,5.363,0,0,1,10.988,2a5.363,5.363,0,0,1,5.136,5.564A5.363,5.363,0,0,1,10.988,13.129Zm0,0q7.7,0,8.988,6.848H2Q3.284,13.129,10.988,13.129Z" transform="translate(0 0)"></path>
+                    </g>
+                  </g>
+                </svg>
+                Account </div>
+              <div class="ta-c f-g1-s1">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve" width="25" height="25">
+                  <style type="text/css">
+    .st0{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+    </style>
+                  <g>
+                    <path id="Rectangle_103_" class="st0" d="M19.83,31.77l-6.29,6.29c-0.63,0.63-1.71,0.18-1.71-0.71v-5.59h-8c-1.1,0-2-0.9-2-2v-26 c0-1.1,0.9-2,2-2h30c1.1,0,2,0.9,2,2v26c0,1.1-0.9,2-2,2H19.83z"/>
+                    <path id="Path_143_" class="st0" d="M23.83,35.77v4c0,1.12,0.9,2,2,2h10l5.29,5.7c0.63,0.64,1.71,0.19,1.71-0.72v-4.98h3 c1.1,0,2-0.88,2-2V22.8c0-1.12-0.9-2.03-2-2.03h-6"/>
+                    <path class="st0" d="M18.83,19.77c0,0,0-2,1-3c2-2,3-3,3-5s-1-4-4-4s-4,2-4,4"/>
+                    <line class="st0" x1="18.83" y1="23.77" x2="18.83" y2="24.77"/>
+                  </g>
+                </svg>
+                Need Help?</div>
+              <div class="ta-c f-g1-s1">
+                <svg class="header-cart-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+                  <g transform="translate(0)">
+                    <path class="class-a" d="M0,0H25V25H0Z" transform="translate(0)"></path>
+                    <path class="class-b" d="M11.5,19h6.279a.5.5,0,0,1,0,1H11.5a3.5,3.5,0,0,1-3.487-3.2,3.5,3.5,0,0,1-2.306-2.912L4.694,5.318A1.5,1.5,0,0,0,3.205,4H2.5a.5.5,0,0,1,0-1h.705A2.5,2.5,0,0,1,5.687,5.2L5.907,7H21.5a.5.5,0,0,1,.488.608L20.51,14.259A3.5,3.5,0,0,1,17.094,17H9.185l-.136,0A2.5,2.5,0,0,0,11.5,19ZM6.059,8,6.7,13.776A2.5,2.5,0,0,0,9.185,16h7.908a2.5,2.5,0,0,0,2.44-1.958L20.877,8Z" transform="translate(0)"></path>
+                    <path class="class-b" d="M18,23a2,2,0,1,1,2-2A2,2,0,0,1,18,23Zm0-1a1,1,0,1,0-1-1A1,1,0,0,0,18,22Z" transform="translate(0)"></path>
+                    <path class="class-b" d="M11,23a2,2,0,1,1,2-2A2,2,0,0,1,11,23Zm0-1a1,1,0,1,0-1-1A1,1,0,0,0,11,22Z" transform="translate(0)"></path>
+                  </g>
+                </svg>
+                Cart </div>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>        
+    </header>     
 
     <!-- Primary Banner section -->
     <div class="primary-hero-banner padding-section">
@@ -211,19 +250,57 @@
       </div>
     </div>
     
-    <!-- Footer section -->
-    <footer class="bottom-footer">
-        <p>&copy; 2023 Healthcare Solutions. All rights reserved.</p>
+    <footer class="section bg-blue-1 slide-disable t-05-ease sr">
+      <div class="wrap-1 pad">
+        <div class="footer flex-box desc gap-1 jc-sb cen centralized">
+          <div class="fb-30"> <img class="mb-1" style="width: 6em; filter: brightness(100)" src="./Assets/doc-logo.png" alt="">
+            <p>DoctorOnCall is Malaysia's most complete digital healthcare platform to access clinics, pharmacies, hospitals and health laboratories online. DoctorOnCall provides online doctor and specialist consultation via video-call, voice-call, chat, e-pharmacy, health screening, vaccinations, health tests, health forum and health content.</p>
+          </div>
+          <div>
+            <h2>Our Services</h2>
+            <p><a href="/medicine">Order Medicine</a> <a href="/online-doctor">Consult A Doctor</a> <a href="/find-doctor/kuala-lumpur/hospitals">Search Hospitals</a> <a href="/medicine/umrah-hajj-vaccination-packages">Umrah &amp; Hajj Vaccination</a> <a href="/find-doctor">Book Appointment</a> <a href="/health-screening">Health Screening</a> <a href="/promos">Promotions</a> <a href="/medicine/account">Rewards</a> <a href="/find-doctor/vaccination-services">Vaccine Services</a> <a href="/tanya/en">Ask A Question</a></p>
+          </div>
+          <div>
+            <h2>Health Content</h2>
+            <p><a href="/health-centre">Health Centre</a> <a href="/tanya/en">Health Forum</a> <a href="/penyakit-a-z">Health Articles</a></p>
+            <h2>COVID-19 Services</h2>
+            <p><a href="/medicine/coronavirus-covid-19-test-kit">COVID-19 Testing</a> <a href="/medicine/covid-19-vaccine">COVID-19 Vaccine</a> <a href="/coronavirus?lang=en">COVID-19 Portal</a> <a href="/medicine/coronavirus-covid-19-test-kit/on-site-office-factory-testing-service">Bulk On-Site Testing</a> <a href="/medicine/coronavirus-covid-19-test-kit/on-site-office-factory-testing-service">Bulk On-Site Vaccine</a></p>
+          </div>
+          <div>
+            <h2>DoctorOnCall</h2>
+            <p><a href="/contact-us">Contact Us</a> <a href="/about-us">About Us</a> <a href="/privacyPolicy">Privacy</a> <a href="/help">FAQ</a> <a href="/termsOfService">Terms of Use</a> <a href="/doctor#/signin">Doctors Login</a> <a href="/media">Media</a> <a href="/medicine/dispensation-policy">Dispensation Policy</a> <a href="/careers">Careers</a> <a href="/corporate-partnership">Corporate Partners</a></p>
+          </div>
+          <div>
+            <h2>DOC Network</h2>
+            <p><a href="https://www.doctoroncall.com">DoctorOnCall Global </a><a href="https://www.doctoroncall.com">DoctorOnCall Marketplace </a><a href="https://www.doctoroncall.com/marketplace">DoctorOnCall B2B </a><a href="/healthcare-ai">DoctorOnCall AI </a><a href="/">DoctorOnCall Indonesia </a><a href="/corporate">Corporate Service</a></p>
+            <div class="r-500">
+              <h2>Follow Us</h2>
+              <div class="socmed flex-box col5"> <a href="#" target="_blank"><img src="images/socmed-fb.svg" alt /></a> <a href="#" target="_blank"><img src="images/socmed-ig.svg" alt /></a> <a href="#" target="_blank"><img src="images/socmed-tw.svg" alt /></a> <a href="#" target="_blank"><img src="images/socmed-yt.svg" alt /></a> <a href="#" target="_blank"><img src="images/socmed-in.svg" alt /></a> </div>
+            </div>
+          </div>
+          <div class="dn a-500 mt-1">
+            <h2 class="ta-c">Follow Us</h2>
+            <div class="socmed flex-box col5 centralized" style="max-width: 20em"> <a href="#" target="_blank"><img src="images/socmed-fb.svg" alt /></a> <a href="#" target="_blank"><img src="images/socmed-ig.svg" alt /></a> <a href="#" target="_blank"><img src="images/socmed-tw.svg" alt /></a> <a href="#" target="_blank"><img src="images/socmed-yt.svg" alt /></a> <a href="#" target="_blank"><img src="images/socmed-in.svg" alt /></a> </div>
+          </div>
+        </div>
+      </div>
     </footer>
+    <div class="copyright bg-white pt-05 pb-05 r-767 slide-disable t-05-ease sr">
+      <div class="wrap-1 pad flex-box col2">
+        <p class="mb-0" style="font-family: 'Oswald', sans-serif;">Copyright © 2022</p>
+        <p class="mb-0 ta-r" style="font-family: 'Oswald', sans-serif;">Privacy Policy | Terms of Use</p>
+      </div>
+    </div>
 
     <!-- To load bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
     <!-- Javascript script file -->
-    <script src="./script.js"></script>
-
-    <!-- Loading service cards -->
-    <script src="./service.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/accordion.min.js"></script>
+    <script src="./js/init.js"></script>
+    <script src="./js/tiny-slider.js"></script>
+    
   </body>
 </html>
