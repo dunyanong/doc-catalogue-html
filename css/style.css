@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@500&display=swap');
+
 body {
     background-color: #fff;
-    font-family: sans-serif;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -126,7 +129,7 @@ body {
 /* Primary Banner styling: Default for laptop/computer screens */
 .primary-hero-banner {
     align-items: center;    
-    background-image: url("./Assets/Asset 36.png");    
+    background-image: url("./../Assets/Asset\ 36.png");    
     background-position: center;
     background-size: cover;    
     display: flex;
