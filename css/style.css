@@ -232,7 +232,7 @@ body {
 }
 
 .benefit-card {
-    max-width: 60%;    
+    max-width: 60%;
 }
 
 .benefit-card > img { 
@@ -372,8 +372,18 @@ body {
 }
 
 /* Partners page styling */
+.partners-group {
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+
+.partners-row {
+    display: flex;
+    justify-content: center;
+} 
+
 .partners-row > img {
-    width: 60%;
+    width: 70%;
     padding: 1rem 0rem;
     height: auto;
 }
@@ -382,11 +392,6 @@ body {
     font-size: 2rem;
     padding-top: 5rem;
     font-weight: 900;
-}
-
-.partners-group {
-    padding-top: 2rem;
-    padding-bottom: 5rem;
 }
 
 .first-partners-row {
