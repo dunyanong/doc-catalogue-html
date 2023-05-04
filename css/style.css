@@ -78,7 +78,7 @@ body {
     background-image: url("./../Images/Asset\ 36.png");
     background-position: center;
     background-size: cover;
-    filter: brightness(0.8);
+    filter: brightness(0.7);
     z-index: -1;
 }
 
@@ -147,6 +147,12 @@ body {
     justify-items: center;
 }
 
+.secondary-positioning {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .secondary-hero-title {
     font-size: 2.5rem;
     font-weight: 700;
@@ -159,6 +165,7 @@ body {
 
 .secondary-hero-description {
     max-width: 80%;
+    font-size: 1rem;
 }
 
 /* Secondary Banner styling: Media query for tablet screens */
@@ -168,6 +175,14 @@ body {
         box-sizing: border-box;
         grid-template-columns: 100%;
         padding: 2rem;
+    }
+    .secondary-positioning {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }    
+    .secondary-hero-title {
+        padding-top: 2rem;
     }
 }
 
@@ -182,14 +197,15 @@ body {
     
     .nurse-image {
         height: auto;
-        margin: 2rem 0;
+        padding: 0rem 0rem;
         max-height: 100%;
         max-width: 80%;
     }
 
     .secondary-hero-title {
         font-size: 1.5rem;
-        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
     }
     
     .secondary-hero-description {
@@ -227,6 +243,10 @@ body {
 .benefit-card-title {
     font-weight: 800;
     font-size: 1.3rem;
+}
+
+.benefit-card-description {
+    font-size: 1.1rem;
 }
 
 .center-benefit-card {
@@ -353,8 +373,8 @@ body {
 
 /* Partners page styling */
 .partners-row > img {
-    width: 5rem;
-    padding: 2rem 0rem;
+    width: 60%;
+    padding: 1rem 0rem;
     height: auto;
 }
 
@@ -394,7 +414,7 @@ body {
 /* Partners page styling: Media query for tablet screens */
 @media(max-width: 992px) {
     .partners-row > img {
-        width: 80%;
+        width: 70%;
         height: auto;
     }
     .partners-section-title {
@@ -431,7 +451,7 @@ body {
         justify-content: center;
     } 
     .partners-row > img {
-        width: 30%;
+        width: 40%;
         height: auto;
     }
     .partners-group {
