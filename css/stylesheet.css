@@ -460,6 +460,7 @@ header .nav-2 {
 .nav-3-d ul li a {
   font-size: 0.8em;
   color: #2e4c5c;
+  text-decoration: none;
 }
 .nav-3 .breadcrumbs {
   padding-left: 1em;
@@ -766,6 +767,7 @@ button:hover {
   font-family: 'Open Sans', sans-serif;
   border-radius: 0.5em;
   filter: brightness(1);
+  text-decoration: none;
 }
 .thumbs.flex-box a div {
   width: 74%;
@@ -773,7 +775,7 @@ button:hover {
   letter-spacing: -0.04em;
   line-height: 1em;
   padding: 0 1em;
-  font-weight: 700;
+  font-weight: 700;  
 }
 .thumbs.flex-box a:hover {
   /* transform: scale(1.05); */
