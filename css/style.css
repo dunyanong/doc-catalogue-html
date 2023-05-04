@@ -75,7 +75,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("./../images/Asset\ 36.png");
+    background-image: url("./../images/Asset\ 36.jpg");
     background-position: center;
     background-size: cover;
     filter: brightness(0.7);
@@ -139,7 +139,7 @@ body {
 
 /* Secondary Banner styling */
 .secondary-hero-banner {
-    background-image: url("../images/secondary-banner-background.png");
+    background-image: url("../images/secondary-banner-background.jpg");
     background-position: center;
     background-size: cover;
     display: grid;
