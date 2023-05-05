@@ -1,0 +1,93 @@
+/* Software banner styling */
+.software-hero-banner {
+    background-color: #ffff;
+    background-size: cover;    
+    display: grid;    
+    grid-template-columns: 50% 50%;
+    height: 80vh;
+    justify-items: center;
+}
+
+.software-positioning {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.software-hero-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.software-hero-description {
+    max-width: 80%;
+    font-size: 1rem;
+}
+
+.view-more-btn {
+    border: 2px solid #68BDEC;
+    color: #68BDEC;
+    background-color: transparent;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 1em;
+}
+  
+.view-more-btn:hover {
+    background-color: #68BDEC;
+    color: white;
+}
+
+/* software Banner styling: Media query for tablet screens */
+@media (max-width: 992px) {
+    .software-hero-banner {
+        align-items: flex-end;
+        box-sizing: border-box;
+        grid-template-columns: 100%;
+        height: 80vh;
+    }
+    .software-positioning {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }    
+    .software-hero-title {
+        padding-top: 2rem;
+    }
+    .cms-image {
+        width: 80%;
+    }    
+}
+
+/* Secondary Banner styling: Media query for mobile screens */
+@media(max-width: 576px) {
+    .software-hero-banner {
+        align-items: flex-end;
+        box-sizing: border-box;
+        grid-template-columns: 100%;
+        height: 100vh;
+    }
+    
+    .nurse-image {
+        height: auto;
+        padding: 0rem 0rem;
+        max-height: 100%;
+        max-width: 80%;
+    }
+
+    .software-hero-title {
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+    }
+    
+    .software-hero-description {
+        margin-bottom: 1rem;
+        max-width: 100%;
+    }
+    .cms-image {
+        width: 80%;
+    }    
+}
