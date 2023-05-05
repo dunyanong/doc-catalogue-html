@@ -43,20 +43,20 @@ body {
 
 /* Provide paddings on the side */
 .padding-section {
-    padding: 0 5rem;
+    padding: 0 5em;
 }
 
 /* Provide paddings on the side: Media query for tablet screens */
 @media (max-width: 992px) {
     .padding-section {
-        padding: 0 3rem;
+        padding: 0 3em;
     }  
 }
 
 /* Provide paddings on the side: Media query for mobile screens */
 @media(max-width: 576px) {
     .padding-section {
-        padding: 0 2rem;
+        padding: 0 2em;
     }  
 }
 
@@ -88,27 +88,27 @@ body {
 
 .primary-hero-title {
     color: #ffff;
-    font-size: 2.5rem;
+    font-size: 2.5em;
     font-weight: 700;
 }
 
 .primary-hero-description {
     color: #ffff;
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
-    margin-top: 1.5rem;
+    font-size: 1em;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
     width: 70%;
 }
 
 .learn-more-btn {
     background-color: #3491C7;
     border: none;
-    border-radius: 0.5rem;
+    border-radius: 0.5em;
     color: #fff;
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 1.2em;
     font-weight: 550;
-    padding: 0.7rem 2.5rem;
+    padding: 0.7em 2.5em;
 }
 
 /* Primary Banner styling: Media query for tablet screens */
@@ -125,14 +125,14 @@ body {
     }
 
     .primary-hero-title {
-        font-size: 2rem;
+        font-size: 2em;
     }
 
     .primary-hero-description {
         color: #ffff;
-        font-size: 0.9rem;
-        margin-bottom: 1.5rem;
-        margin-top: 1.5rem;
+        font-size: 0.9em;
+        margin-bottom: 1.5em;
+        margin-top: 1.5em;
         width: 70%;
     }     
 }
@@ -154,7 +154,7 @@ body {
 }
 
 .secondary-hero-title {
-    font-size: 2.5rem;
+    font-size: 2.5em;
     font-weight: 700;
 }
 
@@ -165,7 +165,7 @@ body {
 
 .secondary-hero-description {
     max-width: 80%;
-    font-size: 1rem;
+    font-size: 1em;
 }
 
 /* Secondary Banner styling: Media query for tablet screens */
@@ -174,7 +174,7 @@ body {
         align-items: flex-end;
         box-sizing: border-box;
         grid-template-columns: 100%;
-        padding: 2rem;
+        padding: 2em;
     }
     .secondary-positioning {
         display: flex;
@@ -182,7 +182,7 @@ body {
         align-items: center;
     }    
     .secondary-hero-title {
-        padding-top: 2rem;
+        padding-top: 2em;
     }
 }
 
@@ -192,24 +192,24 @@ body {
         align-items: flex-end;
         box-sizing: border-box;
         grid-template-columns: 100%;
-        padding: 2rem;
+        padding: 2em;
     }
     
     .nurse-image {
         height: auto;
-        padding: 0rem 0rem;
+        padding: 0em 0em;
         max-height: 100%;
         max-width: 80%;
     }
 
     .secondary-hero-title {
-        font-size: 1.5rem;
-        padding-bottom: 1rem;
-        padding-top: 1rem;
+        font-size: 1.5em;
+        padding-bottom: 1em;
+        padding-top: 1em;
     }
     
     .secondary-hero-description {
-        margin-bottom: 1rem;
+        margin-bottom: 1em;
         max-width: 100%;
     }
 }
@@ -222,12 +222,12 @@ body {
 .benefit-container {
     display: flex;
     justify-content: space-between;
-    padding: 3rem 0rem;
+    padding: 3em 0em;
 }
 
 .benefit-section-title {
-    font-size: 2rem;
-    padding-top: 5rem;
+    font-size: 2em;
+    padding-top: 5em;
     font-weight: 900;
 }
 
@@ -242,11 +242,11 @@ body {
 
 .benefit-card-title {
     font-weight: 800;
-    font-size: 1.3rem;
+    font-size: 1.3em;
 }
 
 .benefit-card-description {
-    font-size: 1.1rem;
+    font-size: 1.1em;
 }
 
 .center-benefit-card {
@@ -269,10 +269,10 @@ body {
     .benefit-container {
         display: flex;
         justify-content: space-between;
-        padding: 2rem 0rem;        
+        padding: 2em 0em;        
     }
     .benefit-section-title {
-        padding-top: 3rem;
+        padding-top: 3em;
     }    
 }
 
@@ -290,27 +290,27 @@ body {
 }
 
 .service-section-title {
-    font-size: 2rem;
-    padding-top: 5rem;
+    font-size: 2em;
+    padding-top: 5em;
     font-weight: 900;
 }
 
 .service-card-group {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding-top: 3rem;
-    padding-bottom: 5rem;
+    padding-top: 3em;
+    padding-bottom: 5em;
 }
 
 .service-card {
     background-color: #FFFFFF;
-    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    margin: 1rem;
+    gap: 2em;
+    margin: 1em;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 1em;
     text-align: start;
 }
 
@@ -320,24 +320,24 @@ body {
 }
 
 .service-card-title {
-    font-size: 1.2rem;
+    font-size: 1.2em;
     font-weight: bold;
-    margin-left: 1rem;
-    margin-top: 1rem;
+    margin-left: 1em;
+    margin-top: 1em;
 }
 
 .service-card-description {
-    font-size: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
-    padding-top: 0rem;
+    font-size: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-top: 0em;
 }
 
 .service-card-learn-more {
     color: #000000;
     display: inline-block;
     font-weight: 700;
-    padding-left: 1rem;
+    padding-left: 1em;
     text-decoration: none;
     transition: all 0.3s ease;
 }
@@ -346,11 +346,11 @@ body {
 @media(max-width: 992px) {
     .service-card-group {
         grid-template-columns: repeat(2, 1fr);
-        padding-top: 1rem;   
+        padding-top: 1em;   
     }
     .service-section-title {
-        font-size: 2rem;
-        padding-top: 3rem;
+        font-size: 2em;
+        padding-top: 3em;
         font-weight: 900;
     }    
 }
@@ -361,20 +361,20 @@ body {
     }    
     .service-card-group {
         grid-template-columns: repeat(1, 1fr);
-        grid-gap: 1rem;
-        padding-left: 0rem;
-        padding-right: 0rem;      
-        padding-bottom: 3rem;  
+        grid-gap: 1em;
+        padding-left: 0em;
+        padding-right: 0em;      
+        padding-bottom: 3em;  
     }
     .service-card {
-        gap: 0rem;
+        gap: 0em;
     }
 }
 
 /* Partners page styling */
 .partners-group {
-    padding-top: 2rem;
-    padding-bottom: 5rem;
+    padding-top: 2em;
+    padding-bottom: 5em;
 }
 
 .partners-row {
@@ -384,34 +384,34 @@ body {
 
 .partners-row > img {
     width: 70%;
-    padding: 1rem 0rem;
+    padding: 1em 0em;
     height: auto;
 }
 
 .partners-section-title {
-    font-size: 2rem;
-    padding-top: 5rem;
+    font-size: 2em;
+    padding-top: 5em;
     font-weight: 900;
 }
 
 .first-partners-row {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 4rem;
+    gap: 4em;
     align-items: center;
 }
 
 .second-partners-row {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 4rem;
+    gap: 4em;
     align-items: center;
 }
 
 .third-partners-row {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 4rem;
+    gap: 4em;
     justify-content: center;
     align-items: center;
 }
@@ -423,11 +423,11 @@ body {
         height: auto;
     }
     .partners-section-title {
-        padding-top: 3rem;
+        padding-top: 3em;
     }
     .partners-group {
-        padding-top: 1rem;
-        padding-bottom: 3rem;
+        padding-top: 1em;
+        padding-bottom: 3em;
     }    
 }
 
@@ -436,19 +436,19 @@ body {
     .first-partners-row {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        gap: 0rem;
+        gap: 0em;
     }
     
     .second-partners-row {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        gap: 0rem;
+        gap: 0em;
     }
     
     .third-partners-row {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        gap: 0rem;
+        gap: 0em;
         align-items: none;
     }
     .partners-row {
@@ -460,13 +460,13 @@ body {
         height: auto;
     }
     .partners-group {
-        padding-top: 3rem;
-        padding-bottom: 3rem;
+        padding-top: 3em;
+        padding-bottom: 3em;
     }       
 }
 
 /* Footer */
 .bottom-footer {
     background-color: #fff;
-    padding: 2rem;
+    padding: 2em;
 }
