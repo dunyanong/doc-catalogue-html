@@ -3,7 +3,7 @@
     background-color: #ffff;
     background-size: cover;    
     display: grid;    
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 60% 40%;
     height: 80vh;
     justify-items: center;
 }
@@ -24,18 +24,34 @@
     font-size: 1em;
 }
 
-.view-more-btn {
+.try-now-btn {
+    border: 2px solid #5B8AC1;
+    color: #ffff;
+    background-color: #5B8AC1;
+    padding: 0.5em 2em;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 0.5em;
+}
+  
+.try-now-btn:hover {
+    background-color: transparent;
+    color: #5B8AC1;
+}
+
+.view-demo-btn {
     border: 2px solid #68BDEC;
     color: #68BDEC;
     background-color: transparent;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 0.5em 2em;
+    font-size: 1em;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    border-radius: 1em;
+    border-radius: 0.5em;
 }
   
-.view-more-btn:hover {
+.view-demo-btn:hover {
     background-color: #68BDEC;
     color: white;
 }
