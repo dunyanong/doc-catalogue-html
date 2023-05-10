@@ -24,12 +24,17 @@
     font-size: 1em;
 }
 
+.banner-buttons {
+    display: flex;
+    gap: 1em;
+}
+
 .try-now-btn {
     border: 2px solid #5B8AC1;
     color: #ffff;
     background-color: #5B8AC1;
-    padding: 0.5em 2em;
-    font-size: 1rem;
+    padding: 0.5em 16px;
+    font-size: 1em;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     border-radius: 0.5em;
@@ -44,7 +49,7 @@
     border: 2px solid #68BDEC;
     color: #68BDEC;
     background-color: transparent;
-    padding: 0.5em 2em;
+    padding: 0.5em 16px;
     font-size: 1em;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
@@ -59,9 +64,8 @@
 /* software Banner styling: Media query for tablet screens */
 @media (max-width: 992px) {
     .software-hero-banner {
-        align-items: flex-end;
         box-sizing: border-box;
-        grid-template-columns: 100%;
+        grid-template-columns: 70% 30%;
         height: 80vh;
     }
     .software-positioning {
@@ -70,27 +74,18 @@
         align-items: center;
     }    
     .software-hero-title {
-        padding-top: 2em;
+        padding-top: 0em;
     }
-    .cms-image {
-        width: 80%;
+    .Tele-consult-image {
+        width: 100%;
     }    
 }
 
-/* Secondary Banner styling: Media query for mobile screens */
+/* Software Banner styling: Media query for mobile screens */
 @media(max-width: 576px) {
     .software-hero-banner {
-        align-items: flex-end;
-        box-sizing: border-box;
         grid-template-columns: 100%;
-        height: 100vh;
-    }
-    
-    .nurse-image {
-        height: auto;
-        padding: 0em 0em;
-        max-height: 100%;
-        max-width: 80%;
+        height: 150vh;
     }
 
     .software-hero-title {
@@ -102,8 +97,79 @@
     .software-hero-description {
         margin-bottom: 1em;
         max-width: 100%;
+    }  
+}
+
+/* Key Benefit Page styling */
+.key-benefit-hero-banner {
+    background-image: url("../test-images/key-benefit-background.jpg");
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    color: #ffff;
+    height: 80vh;
+}
+
+.key-benefit-items {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    max-width: 80%;
+}
+
+.key-benefit-hero-title {
+    font-size: 2.5em;
+    font-weight: 700;
+    padding-top: 0em;
+}
+
+.key-benefit-hero-description {
+    max-width: 80%;
+    font-size: 1.2em;
+}
+
+.blue-tick {
+    font-size: 1.2em;
+    color: #0066FF;
+}
+
+/* Key Benefit Page styling: Media query for tablet screens */
+@media (max-width: 992px) {
+    .key-benefit-hero-banner {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        box-sizing: border-box;
+        padding-top: 0em;
     }
-    .cms-image {
-        width: 80%;
+    .key-benefit-items {
+        align-items: center;
+        display: flex;
+        justify-content: start;
+        max-width: 90%;
+    }
+}
+
+/* Key Benefit Page styling: Media query for mobile screens */
+@media(max-width: 576px) {
+    .key-benefit-hero-banner {
+        grid-template-columns: 100%;
+        height: 120vh;
+    }
+    .key-benefit-items {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
     }    
+
+    .key-benefit-hero-title {
+        font-size: 1.5em;
+    }
+    
+    .key-benefit-hero-description {
+        max-width: 100%;
+        padding-top: 10rem;
+    }
 }
