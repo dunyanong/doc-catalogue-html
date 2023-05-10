@@ -17,6 +17,7 @@
 .software-hero-title {
     font-size: 2.5em;
     font-weight: 700;
+    letter-spacing: -0.08em;
 }
 
 .software-hero-description {
@@ -66,7 +67,7 @@
     .software-hero-banner {
         box-sizing: border-box;
         grid-template-columns: 70% 30%;
-        height: 80vh;
+        height: 50vh;
     }
     .software-positioning {
         display: flex;
@@ -75,6 +76,7 @@
     }    
     .software-hero-title {
         padding-top: 0em;
+        letter-spacing: -0.08em;
     }
     .Tele-consult-image {
         width: 100%;
@@ -84,14 +86,15 @@
 /* Software Banner styling: Media query for mobile screens */
 @media(max-width: 576px) {
     .software-hero-banner {
-        grid-template-columns: 100%;
-        height: 150vh;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
     }
 
     .software-hero-title {
         font-size: 1.5em;
-        padding-bottom: 1em;
-        padding-top: 1em;
+        padding-top: 0em;
+        letter-spacing: -0.08em;
     }
     
     .software-hero-description {
@@ -116,12 +119,13 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    max-width: 80%;
+    max-width: 100%;
 }
 
 .key-benefit-hero-title {
     font-size: 2.5em;
     font-weight: 700;
+    letter-spacing: -0.08em;
     padding-top: 0em;
 }
 
@@ -141,6 +145,7 @@
         display: grid;
         grid-template-columns: 50% 50%;
         box-sizing: border-box;
+        height: 50vh;
         padding-top: 0em;
     }
     .key-benefit-items {
@@ -149,16 +154,25 @@
         justify-content: start;
         max-width: 90%;
     }
+    .key-benefit-hero-title {
+        font-size: 1.5em;
+        letter-spacing: -0.08em;
+    }
+    .key-benefit-hero-description {
+        max-width: 100%;
+        font-size: 0.8em;
+    }    
 }
 
 /* Key Benefit Page styling: Media query for mobile screens */
 @media(max-width: 576px) {
     .key-benefit-hero-banner {
-        grid-template-columns: 100%;
-        height: 120vh;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
     }
     .key-benefit-items {
-        align-items: center;
+        align-items: start;
         display: flex;
         justify-content: center;
         max-width: 100%;
@@ -166,10 +180,80 @@
 
     .key-benefit-hero-title {
         font-size: 1.5em;
+        letter-spacing: -0.08em;
     }
     
     .key-benefit-hero-description {
         max-width: 100%;
-        padding-top: 10rem;
+        font-size: 0.8em;
     }
+}
+
+/* Review banner styling */
+.review-banner {
+    background-color: #ffff;
+    background-size: cover;    
+    display: grid;    
+    grid-template-columns: 60% 40%;
+    height: 80vh;
+    justify-items: center;
+}
+
+.review-positioning {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-hero-title {
+    font-size: 2.5em;
+    font-weight: 900;
+    letter-spacing: -0.08em;
+}
+
+.review-hero-description {
+    max-width: 80%;
+    font-size: 1em;
+}
+
+/* Review Banner styling: Media query for tablet screens */
+@media (max-width: 992px) {
+    .review-banner {
+        grid-template-columns: 70% 30%;
+        height: 80vh;
+    }
+    .review-positioning {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }    
+    .review-hero-title {
+        font-size: 2.0em;
+        padding-top: 0em;
+        letter-spacing: -0.1em;
+    }
+    .eleconsult-dashboard-image {
+        width: 100%;
+    }    
+}
+
+/* Review Banner styling: Media query for mobile screens */
+@media(max-width: 576px) {
+    .review-banner {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .review-hero-title {
+        font-size: 1.5em;
+        padding-bottom: 1em;
+        padding-top: 1em;
+        letter-spacing: -0.1em;
+    }
+    
+    .review-hero-description {
+        margin-bottom: 1em;
+        max-width: 100%;
+    }  
 }
