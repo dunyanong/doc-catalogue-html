@@ -88,9 +88,14 @@
     .software-hero-banner {
         display: flex;
         flex-direction: column;
-        height: 100vh;
+        height: 100%;
     }
-
+    .software-positioning {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5em 0em;
+    }
     .software-hero-title {
         font-size: 1.5em;
         padding-top: 0em;
@@ -100,7 +105,11 @@
     .software-hero-description {
         margin-bottom: 1em;
         max-width: 100%;
-    }  
+    }
+    .Tele-consult-image {
+        width: 70%;
+        padding-bottom: 2em;
+    }    
 }
 
 /* Key Benefit Page styling */
@@ -145,7 +154,7 @@
         display: grid;
         grid-template-columns: 50% 50%;
         box-sizing: border-box;
-        height: 50vh;
+        height: 40vh;
         padding-top: 0em;
     }
     .key-benefit-items {
@@ -169,23 +178,23 @@
     .key-benefit-hero-banner {
         display: flex;
         flex-direction: column;
-        height: 100vh;
+        height: 80vh;
     }
     .key-benefit-items {
         align-items: start;
         display: flex;
         justify-content: center;
         max-width: 100%;
+        padding-top: 5em;
     }    
 
     .key-benefit-hero-title {
         font-size: 1.5em;
         letter-spacing: -0.08em;
     }
-    
     .key-benefit-hero-description {
         max-width: 100%;
-        font-size: 0.8em;
+        font-size: 1em;
     }
 }
 
@@ -209,6 +218,7 @@
     font-size: 2.5em;
     font-weight: 900;
     letter-spacing: -0.08em;
+    padding: 0;
 }
 
 .review-hero-description {
@@ -218,9 +228,12 @@
 
 /* Review Banner styling: Media query for tablet screens */
 @media (max-width: 992px) {
+    .quotation {
+        padding-top: 8em;
+    }
     .review-banner {
         grid-template-columns: 70% 30%;
-        height: 80vh;
+        height: 50vh;
     }
     .review-positioning {
         display: flex;
@@ -229,26 +242,29 @@
     }    
     .review-hero-title {
         font-size: 2.0em;
-        padding-top: 0em;
+        padding: none;
         letter-spacing: -0.1em;
     }
-    .eleconsult-dashboard-image {
-        width: 100%;
-    }    
+    .teleconsult-dashboard-image {
+        width: 70%;
+        padding-top: 2em;
+    }
 }
 
 /* Review Banner styling: Media query for mobile screens */
-@media(max-width: 576px) {
+@media(max-width: 576px) {    
+    .quotation {
+        padding-top: 4em;
+    }    
     .review-banner {
         display: flex;
         flex-direction: column;
-        height: 100vh;
+        height: 100%;
     }
 
     .review-hero-title {
         font-size: 1.5em;
-        padding-bottom: 1em;
-        padding-top: 1em;
+        padding: 0;
         letter-spacing: -0.1em;
     }
     
@@ -311,11 +327,25 @@
 
 /* Review Banner styling: Media query for tablet screens */
 @media (max-width: 992px) {
-
+    .feature-page{
+        height: 40vh;
+    }
+    .feature-grid {
+        gap: 2em;
+    }    
+    .feature-description {
+        font-size: 0.8em;
+    }
 }
 
 /* Review Banner styling: Media query for mobile screens */
 @media(max-width: 576px) {
+    .feature-page {
+        height: 120%;
+    }
+    .feature-description-title {
+        padding-top: 2em;
+    }
     .feature-grid {
         display: grid;
         grid-template-columns: 100%;
@@ -326,5 +356,9 @@
         display: flex;
         flex-direction: column;
         align-items: start;
-    }    
+    }
+    .feature-description {
+        padding-top: 1em;
+        font-size: 0.8em;
+    }
 }
