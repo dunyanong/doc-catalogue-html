@@ -426,3 +426,122 @@
         gap: 1em;
     }
 }
+
+/* Contact Page styling */
+.contact-page {
+    background-color: #ffff;
+    background-size: cover;    
+    display: grid;
+    grid-template-columns: 60% 40%;
+    height: 100%;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.contact-page-positioning {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.contact-page-title {
+    font-size: 2.5em;
+    font-weight: 700;
+    letter-spacing: -0.08em;
+}
+
+.contact-page-description {
+    max-width: 80%;
+    font-size: 1em;
+}
+
+.form-flex {
+    display: flex;
+    gap: 1em;
+}
+
+.form-field {
+    margin-bottom: 1em;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.form-field input,
+.form-field textarea {
+    width: 100%;
+    padding: 0.5em;
+    font-size: 1em;
+    border-radius: 0.3em;
+    border-width: 0.1em;
+}
+
+.form-actions {
+    text-align: start;
+}
+
+.form-actions button {
+    padding: 0.5em 1em;
+    font-size: 1em;
+    background-color: #5B8AC1;
+    color: white;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+/* Contact Page styling: Media query for tablet screens */
+@media (max-width: 992px) {
+    .contact-page {
+        grid-template-columns: 70% 30%;
+        height: 100%;
+        padding-top: 5em;
+        padding-bottom: 5em;
+    }
+    .contact-page-positioning {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }    
+    .contact-page-title {
+        padding-top: 0em;
+        letter-spacing: -0.08em;
+    }
+    .form-container {
+        max-width: 25em;
+    }   
+}
+
+/* Contact Page styling: Media query for mobile screens */
+@media(max-width: 576px) {
+    .contact-page {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding-top: 5em;
+        padding-bottom: 5em;
+        gap: 3em;
+    }
+    .contact-page-positioning {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0em 0em;
+    }
+    .contact-page-title {
+        font-size: 1.5em;
+        padding-top: 0em;
+        letter-spacing: -0.08em;
+    }
+    
+    .contact-page-description {
+        margin-bottom: 1em;
+        max-width: 100%;
+    }
+    .form-flex {
+        gap: 0.5em;
+    }
+}
