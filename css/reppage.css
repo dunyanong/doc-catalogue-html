@@ -33,9 +33,9 @@
 }
 
 .try-now-btn {
-    border: 2px solid #5B8AC1;
+    border: 2px solid #27326D;
     color: #ffff;
-    background-color: #5B8AC1;
+    background-color: #27326D;
     padding: 0.5em 16px;
     font-size: 1em;
     cursor: pointer;
@@ -45,12 +45,12 @@
   
 .try-now-btn:hover {
     background-color: transparent;
-    color: #5B8AC1;
+    color: #27326D;
 }
 
 .view-demo-btn {
-    border: 2px solid #68BDEC;
-    color: #68BDEC;
+    border: 2px solid #27326D;
+    color: #27326D;
     background-color: transparent;
     padding: 0.5em 16px;
     font-size: 1em;
@@ -60,7 +60,7 @@
 }
   
 .view-demo-btn:hover {
-    background-color: #68BDEC;
+    background-color: #27326D;
     color: white;
 }
 
@@ -111,6 +111,7 @@
     
     .software-hero-description {
         margin-bottom: 1em;
+        font-size: 1.2em;
         max-width: 100%;
     }
     .Tele-consult-image {
@@ -179,7 +180,7 @@
     }
     .key-benefit-hero-description {
         max-width: 100%;
-        font-size: 0.8em;
+        font-size: 1em;
     }    
 }
 
@@ -206,7 +207,7 @@
     }
     .key-benefit-hero-description {
         max-width: 100%;
-        font-size: 1em;
+        font-size: 1.2em;
     }
 }
 
@@ -215,7 +216,7 @@
     background-color: #ffff;
     background-size: cover;    
     display: grid;    
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 40% 60%;
     height: 100%;
     padding-top: 5em;
     padding-bottom: 5em;
@@ -226,6 +227,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 2em;
 }
 
 .review-hero-title {
@@ -240,13 +242,29 @@
     font-size: 1em;
 }
 
+.review-button {
+    border: 2px solid #27326D;
+    color: #ffff;
+    background-color: #27326D;
+    padding: 0.5em 16px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 0.5em;
+}
+  
+.review-button:hover {
+    background-color: transparent;
+    color: #27326D;
+}
+
 /* Review Banner styling: Media query for tablet screens */
 @media (max-width: 992px) {
     .quotation {
         padding-top: 8em;
     }
     .review-banner {
-        grid-template-columns: 70% 30%;
+        grid-template-columns: 30% 70%;
         height: 100%;
         padding-top: 5em;
         padding-bottom: 5em;
@@ -263,7 +281,7 @@
     }
     .teleconsult-dashboard-image {
         width: 70%;
-        padding-top: 2em;
+        padding-top: 0em;
     }
 }
 
@@ -289,7 +307,10 @@
     .review-hero-description {
         margin-bottom: 1em;
         max-width: 100%;
-    }  
+    }
+    .review-button {
+        width: 100%;
+    }
 }
 
 /* Review banner styling */
@@ -335,7 +356,7 @@
         gap: 2em;
     }    
     .feature-description {
-        font-size: 0.8em;
+        font-size: 1em;
     }
 }
 
@@ -358,11 +379,14 @@
     .feature-grid > div {
         display: flex;
         flex-direction: column;
-        align-items: start;
+        align-items: center;
     }
     .feature-description {
         padding-top: 1em;
-        font-size: 0.8em;
+        font-size: 1em;
+    }
+    .feature-titles-container {
+        text-align: center;
     }
 }
 
@@ -480,17 +504,27 @@
 }
 
 .form-actions {
-    text-align: start;
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
 }
 
 .form-actions button {
     padding: 0.5em 1em;
     font-size: 1em;
-    background-color: #5B8AC1;
+    background-color: #27326D;
     color: white;
     border: none;
     border-radius: 0.5em;
     cursor: pointer;
+    width: 48%;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid #27326D;
+}
+
+.form-actions button:hover {
+    background-color: transparent;
+    color: #27326D;
 }
 
 /* Contact Page styling: Media query for tablet screens */
@@ -513,6 +547,9 @@
     .form-container {
         max-width: 25em;
     }   
+    .form-actions {
+        text-align: end;
+    }
 }
 
 /* Contact Page styling: Media query for mobile screens */
@@ -544,4 +581,11 @@
     .form-flex {
         gap: 0.5em;
     }
+    .form-actions {
+        text-align: end;
+        gap: 0em;
+    }
+    .form-actions button {
+        width: 100%;
+    }  
 }

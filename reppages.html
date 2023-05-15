@@ -24,7 +24,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
-    <script src="./js/script.js"></script>
+    <script src="./js/scroll.js"></script>
     <script src="./js/accordion.min.js"></script>
     <script src="./js/tiny-slider.js"></script>
   </head>
@@ -377,7 +377,7 @@
     </div> 
 
     <!-- Software section -->
-    <div class="software-hero-banner padding-section" id="explore-section">
+    <div class="software-hero-banner padding-section" id="software-section">
       <div class="software-positioning"> 
         <div>
           <p class="software-hero-title text-start">Tele-consult Platform</p>
@@ -387,7 +387,7 @@
             online doctor consultation now!
           </p>
           <div class="banner-buttons">
-            <button class="try-now-btn">Try Now</button>
+            <button class="try-now-btn" onclick=scrollToContactUs()>Contact Us</button>
             <button class="view-demo-btn">View Demo</button>
           </div>
         </div>
@@ -398,14 +398,14 @@
     </div>
 
     <!-- Key Benefit section -->
-    <div class="key-benefit-hero-banner padding-section" id="explore-section">
+    <div class="key-benefit-hero-banner padding-section" id="key-benefit-section">
       <div class="key-benefit-items"> 
         <div>
           <span class="key-benefit-hero-description">Design for convenience</span>
           <p class="key-benefit-hero-title text-start">
             Upgrade Your Hospital with Out Virtual Consultation
-          </p>          
-        </div>      
+          </p>
+        </div>
       </div>        
       <div class="key-benefit-items"> 
         <div class="key-benefit-hero-description">
@@ -418,28 +418,29 @@
     </div>
 
     <!-- Review section -->
-    <div class="review-banner padding-section" id="explore-section">
-      <div class="review-positioning"> 
-        <div>
-          <img src="./test-images/quotation.png" alt="quotation" class="quotation"/>
-          <p class="review-hero-title text-start">Effortless online doctor consultations with same-day prescription delivery. Exceptional personalised customer care. Perfect for hospital owners.</p>
-          <p class="review-hero-description">
-            <span class="description-bold">John Doe</span>
-            <br />
-            Skin Specialist Doctor
-          </p>
-        </div>
-      </div>
+    <div class="review-banner padding-section" id="eview-section">
       <div class="vertical-center horizontal-center">
         <img src="./test-images/teleconsult-dashboard.png" alt="Tele-consult Image" class="teleconsult-dashboard-image">
      </div>
+     <div class="review-positioning"> 
+      <div>
+        <img src="./test-images/quotation.png" alt="quotation" class="quotation"/>
+        <p class="review-hero-title text-start">Effortless online doctor consultations with same-day prescription delivery. Exceptional personalised customer care. Perfect for hospital owners.</p>
+        <p class="review-hero-description">
+          <span class="description-bold">John Doe</span>
+          <br />
+          Skin Specialist Doctor
+        </p>
+          <button class="review-button" onclick=scrollToContactUs()>Contact Us</button>
+      </div>
+    </div>     
     </div>
 
     <!-- Key Features section -->
-    <div class="feature-page padding-section" id="explore-section">
-      <div>
+    <div class="feature-page padding-section" id="key-features-section">
+      <div class="feature-titles-container">
         <span class="feature-description-title description-bold ">Tele-consult Platform</span>
-        <p class="feature-title text-start">
+        <p class="feature-title">
           Key Features
         </p>
       </div>
@@ -464,7 +465,7 @@
     </div>
 
     <!-- Demo page section -->
-    <div class="demo-page padding-section" id="explore-section">
+    <div class="demo-page padding-section" id="demo-section">
         <p class="demo-title text-center">
           Telehealth In Action!
         </p>          
@@ -484,7 +485,7 @@
     </div>
 
     <!-- Contact Us section -->
-    <div class="contact-page padding-section" id="explore-section">
+    <div class="contact-page padding-section" id="contact-us-section">
       <div class="contact-page-positioning"> 
         <div>
           <p class="contact-page-title text-start">Contact us</p>
@@ -527,21 +528,21 @@
           </div>
           <div>
             <h2>Our Services</h2>
-            <p><a href="/medicine">Order Medicine</a> <a href="/online-doctor">Consult A Doctor</a> <a href="/find-doctor/kuala-lumpur/hospitals">Search Hospitals</a> <a href="/medicine/umrah-hajj-vaccination-packages">Umrah &amp; Hajj Vaccination</a> <a href="/find-doctor">Book Appointment</a> <a href="/health-screening">Health Screening</a> <a href="/promos">Promotions</a> <a href="/medicine/account">Rewards</a> <a href="/find-doctor/vaccination-services">Vaccine Services</a> <a href="/tanya/en">Ask A Question</a></p>
+            <p class="decoration-none"><a href="/medicine">Order Medicine</a> <a href="/online-doctor">Consult A Doctor</a> <a href="/find-doctor/kuala-lumpur/hospitals">Search Hospitals</a> <a href="/medicine/umrah-hajj-vaccination-packages">Umrah &amp; Hajj Vaccination</a> <a href="/find-doctor">Book Appointment</a> <a href="/health-screening">Health Screening</a> <a href="/promos">Promotions</a> <a href="/medicine/account">Rewards</a> <a href="/find-doctor/vaccination-services">Vaccine Services</a> <a href="/tanya/en">Ask A Question</a></p>
           </div>
           <div>
             <h2>Health Content</h2>
-            <p><a href="/health-centre">Health Centre</a> <a href="/tanya/en">Health Forum</a> <a href="/penyakit-a-z">Health Articles</a></p>
+            <p class="decoration-none"><a href="/health-centre">Health Centre</a> <a href="/tanya/en">Health Forum</a> <a href="/penyakit-a-z">Health Articles</a></p>
             <h2>COVID-19 Services</h2>
-            <p><a href="/medicine/coronavirus-covid-19-test-kit">COVID-19 Testing</a> <a href="/medicine/covid-19-vaccine">COVID-19 Vaccine</a> <a href="/coronavirus?lang=en">COVID-19 Portal</a> <a href="/medicine/coronavirus-covid-19-test-kit/on-site-office-factory-testing-service">Bulk On-Site Testing</a> <a href="/medicine/coronavirus-covid-19-test-kit/on-site-office-factory-testing-service">Bulk On-Site Vaccine</a></p>
+            <p class="decoration-none"><a href="/medicine/coronavirus-covid-19-test-kit">COVID-19 Testing</a> <a href="/medicine/covid-19-vaccine">COVID-19 Vaccine</a> <a href="/coronavirus?lang=en">COVID-19 Portal</a> <a href="/medicine/coronavirus-covid-19-test-kit/on-site-office-factory-testing-service">Bulk On-Site Testing</a> <a href="/medicine/coronavirus-covid-19-test-kit/on-site-office-factory-testing-service">Bulk On-Site Vaccine</a></p>
           </div>
           <div>
             <h2>DoctorOnCall</h2>
-            <p><a href="/contact-us">Contact Us</a> <a href="/about-us">About Us</a> <a href="/privacyPolicy">Privacy</a> <a href="/help">FAQ</a> <a href="/termsOfService">Terms of Use</a> <a href="/doctor#/signin">Doctors Login</a> <a href="/media">Media</a> <a href="/medicine/dispensation-policy">Dispensation Policy</a> <a href="/careers">Careers</a> <a href="/corporate-partnership">Corporate Partners</a></p>
+            <p class="decoration-none"><a href="/contact-us">Contact Us</a> <a href="/about-us">About Us</a> <a href="/privacyPolicy">Privacy</a> <a href="/help">FAQ</a> <a href="/termsOfService">Terms of Use</a> <a href="/doctor#/signin">Doctors Login</a> <a href="/media">Media</a> <a href="/medicine/dispensation-policy">Dispensation Policy</a> <a href="/careers">Careers</a> <a href="/corporate-partnership">Corporate Partners</a></p>
           </div>
           <div>
             <h2>DOC Network</h2>
-            <p><a href="https://www.doctoroncall.com">DoctorOnCall Global </a><a href="https://www.doctoroncall.com">DoctorOnCall Marketplace </a><a href="https://www.doctoroncall.com/marketplace">DoctorOnCall B2B </a><a href="/healthcare-ai">DoctorOnCall AI </a><a href="/">DoctorOnCall Indonesia </a><a href="/corporate">Corporate Service</a></p>
+            <p class="decoration-none"><a href="https://www.doctoroncall.com">DoctorOnCall Global </a><a href="https://www.doctoroncall.com">DoctorOnCall Marketplace </a><a href="https://www.doctoroncall.com/marketplace">DoctorOnCall B2B </a><a href="/healthcare-ai">DoctorOnCall AI </a><a href="/">DoctorOnCall Indonesia </a><a href="/corporate">Corporate Service</a></p>
             <div class="r-500">
               <h2>Follow Us</h2>
               <div class="socmed flex-box col5"> <a href="#" target="_blank"><img src="images/socmed-fb.svg" alt /></a> <a href="#" target="_blank"><img src="images/socmed-ig.svg" alt /></a> <a href="#" target="_blank"><img src="images/socmed-tw.svg" alt /></a> <a href="#" target="_blank"><img src="images/socmed-yt.svg" alt /></a> <a href="#" target="_blank"><img src="images/socmed-in.svg" alt /></a> </div>
